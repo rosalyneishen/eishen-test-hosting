@@ -1,0 +1,191 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    height: 5%;
+    font-family: "Cutive Mono";
+    z-index: 8;
+    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nav {
+    font-size: 30px;
+    display: flex;
+    position: absolute;
+    color: darkred;
+}
+
+nav {
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.content {
+    height: 1000px;
+    text-align: center;
+}
+
+.contact {
+    height: 350px;
+}
+
+.home {
+    height: 575px;
+}
+
+.photos {
+    height: auto;
+}
+
+.main-image {
+    width: 50%;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 24%;
+    right: 0;
+}
+
+.main-info {
+    position: absolute;
+    top: 265px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px 55px;
+}
+
+.feature-photo {
+    width: 455px;
+    height: 455px;
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px solid darkred;
+
+    &--caption {
+        z-index: 7;
+        color: white;
+        background-color: darkslategray;
+        position: absolute;
+        padding-top: 7px;
+        height: 30px;
+        text-align: center;
+    }
+}
+
+.contact-main-text {
+    font-size: 30px;
+    color: darkslategray;
+    margin:25px;
+}
+
+.rates-table {
+    margin:auto;
+    padding: 20px;
+    border: 1px solid darkred;
+    text-align: left;
+
+    &td {
+        padding:15px;
+    }
+}
+
+.body {
+    font-family: 'Cutive Mono';
+    background-color: #FDE3C0;
+    color: darkred;
+    font-size: 22px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+}
+
+.footer {
+    font-style: italic;
+    color:gray;
+    font-size: 15px;
+    position: absolute;
+    bottom: 17px;
+    padding: 10px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: contents;
+}
+
+
+@media (max-width: 900px) {
+    .home {
+      height: 600px;
+    }
+
+    .main-info {
+      top: 160px;
+    }
+
+    .feature-photo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+        &--caption {
+            position: relative;
+            top:25px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .home {
+        height: 875px;
+    }
+
+    .feature-photo {
+        width:400px;
+        margin: -13px 0px;
+        width: -webkit-fill-available;
+
+        &--caption {
+            top:unset;
+            padding: 10px;
+            width: -webkit-fill-available;
+        }
+    }
+
+    .main-image {
+        width: 85%;
+        top: 60px;
+        bottom: 0;
+        right: 8%;
+        left:unset;
+    }
+
+    .main-info {
+        padding: 25px 30px;
+    }
+
+    .header {
+        padding: 10px 0px;
+        left:-7px;
+    }
+
+    .nav {
+        font-size: 24px;
+        padding-left:25px;
+    }
+
+    .body {
+        right: unset;
+        font-size: 20px;
+        width: -webkit-fill-available;
+    }
+
+    .contact {
+        height: 500px;
+        margin-top: 40px;
+    }
+}
