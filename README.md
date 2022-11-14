@@ -1,4 +1,17 @@
 # RedlandRvPark
+##To make changes:
+run `ng build --aot` from the redland-rv-park folder
+Make sure public/index.html gets updated because that is the main file for dedployment
+
+##To Deploy:
+from the redland-rv-park folder run a `firebase deploy`. This should update the deployed site with your changes.
+
+##To view the git repo:
+https://github.com/rosalyneishen/eishen-test-hosting
+
+##To view deployed app as admin
+https://console.firebase.google.com/ 
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
