@@ -33,7 +33,7 @@ nav {
 }
 
 .home {
-    height: 575px;
+    height: auto;
 }
 
 .photos {
@@ -42,21 +42,15 @@ nav {
 
 .main-image {
     width: 50%;
-    position: absolute;
     top: 50px;
-    bottom: 0;
-    left: 24%;
-    right: 0;
+    margin-top: 60px;
 }
 
 .main-info {
-    position: absolute;
-    top: 265px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    max-width: 1375px;
+    display: block;
     text-align: center;
-    padding: 15px 55px;
+    padding: 15px 15%;
 }
 
 .feature-photo {
